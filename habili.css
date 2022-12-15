@@ -1,0 +1,99 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 100%;
+  z-index: auto;
+  background: linear-gradient(#121212, #212b46);
+}
+.menu ul {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  width: 90%;
+  height: 60px;
+}
+.menu ul a {
+  float: right;
+  cursor: pointer;
+  list-style-type: none;
+  margin-left: 10%;
+  font-size: 20px;
+  color: #fff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-decoration: none;
+}
+.menu ul a:hover {
+  background-color: #212b46;
+  border-radius: 10px;
+  padding: 5px;
+}
+@media (max-width: 474px) {
+  .menu ul a {
+    font-size: 13px;
+  }
+}
+
+body {
+  background: linear-gradient(#121212, #212b46);
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.geral {
+  height: 100%;
+  justify-items: start;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
+.geral .geral-div {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+}
+.geral .geral-div i {
+  font-size: 30px;
+  padding: 20px;
+}
+.geral .geral-div i.fa-html5 {
+  color: rgb(235, 93, 93);
+}
+.geral .geral-div i.fa-css3-alt {
+  color: rgb(88, 88, 222);
+}
+.geral .geral-div i.fa-js {
+  color: rgb(243, 243, 61);
+}
+.geral .geral-div i.fa-sass {
+  color: rgb(186, 81, 99);
+}
+.geral .geral-div i.fa-bootstrap {
+  color: rgb(148, 12, 148);
+}
+.geral .geral-div i.fa-react {
+  color: rgb(0, 157, 255);
+}
+.geral .geral-div i.fa-git-alt {
+  color: rgb(234, 91, 43);
+}
+.geral .geral-div h4 {
+  color: antiquewhite;
+  padding: 5px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #212b46;
+}/*# sourceMappingURL=habili.css.map */

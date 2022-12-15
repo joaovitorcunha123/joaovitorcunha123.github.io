@@ -1,0 +1,128 @@
+@mixin flexcenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+@mixin widthheight {
+    width: 100%;
+    height: 100vh;  
+
+}
+@mixin imagemposi {
+    background-image: url(/projetinhos/form.jpeg);
+                background-position:center ;
+                background-repeat: no-repeat;
+                background-size: cover;
+}
+
+$colorgeral: linear-gradient(#121212, #212b46);
+$colorhtml : rgb(254, 43, 43);
+$colorcss:rgb(0, 0, 255);
+$colorscript :rgb(229, 229, 10);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+  .menu{
+   @include flexcenter();
+   height: 60px;
+   width: 100%;
+   z-index:auto;
+   background:$colorgeral;
+  
+  
+  
+   
+
+   ul{
+       display: flex;
+       align-items: center;
+       justify-content: right;
+       width: 90%;
+       height: 60px;
+       
+       
+      
+
+      
+       a{
+           float: right;
+           cursor: pointer;
+           list-style-type: none;
+           margin-left: 10%;
+           font-size: 20px;
+           color: #fff;
+           font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+           text-decoration: none;
+           &:hover{
+               background-color:#212b46;
+               border-radius: 10px;
+               padding: 5px;
+           }
+           @media(max-width:474px){font-size: 13px;};
+          
+       }
+   }
+  } 
+  body{
+    background:$colorgeral ;
+    height: 100%;
+    width: 100%;
+    display: block;
+    
+    
+  }
+  .geral{
+  height: 100%;
+  justify-items: start;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  
+   
+  .geral-div{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+
+    i{
+        font-size: 30px;
+        padding: 20px;
+        &.fa-html5{
+            color:rgb(235, 93, 93);
+        }
+        &.fa-css3-alt{
+            color: rgb(88, 88, 222);
+        }
+        &.fa-js{
+            color: rgb(243, 243, 61);
+        }
+        &.fa-sass{
+            color: rgb(186, 81, 99);
+        }
+        &.fa-bootstrap{
+            color: rgb(148, 12, 148);
+        }
+        &.fa-react{
+            color: rgb(0, 157, 255);
+        }
+        &.fa-git-alt{
+            color: rgb(234, 91, 43);
+        }
+       
+    }
+    h4{
+        color: antiquewhite;
+        padding: 5px;
+    }
+  }
+  }
+  ::-webkit-scrollbar{
+    width: 10px;
+  }
+  ::-webkit-scrollbar-thumb{
+    background-color: #212b46;
+  }
