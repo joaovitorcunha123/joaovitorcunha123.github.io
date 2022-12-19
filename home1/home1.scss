@@ -30,8 +30,9 @@ $colorscript :rgb(229, 229, 10);
    height: 60px;
    width: 100%;
    position: fixed;
-   z-index:auto;
+   z-index: 1;
    background:$colorgeral;
+   
    
   
   
@@ -44,10 +45,12 @@ $colorscript :rgb(229, 229, 10);
        width: 90%;
        position: fixed;
        height: 60px;
+       z-index: 1;
+       overflow: hidden;
        .fa-square-arrow-left{
         width: 100px;
         background-color: #fff;
-        z-index: 1;
+       
       }
        
        
@@ -61,6 +64,7 @@ $colorscript :rgb(229, 229, 10);
            margin-left: 10%;
            font-size: 20px;
            color: #fff;
+           z-index: 1;
            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
            text-decoration: none;
            &:hover{
@@ -193,4 +197,105 @@ $colorscript :rgb(229, 229, 10);
 
     }
   }
+
+  .conteiner{
+    width: 100%;
+    height: 80vh;
+    flex-direction: column;
+    @include flexcenter();
+    padding-top: 60px;
+    
+  
+   
+
+}
+.title{
+    font-size: 65px;
+    @media(max-width:500px){font-size: 35px;}
+    color: #fff;
+    text-align: center;
+    filter: drop-shadow(2px 2px 50px #fff);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+   
+
+
+}
+.editores{
+    @include flexcenter();
+    width: 300px;
+    margin-top: 30px;
+    position: relative;
+
+    .html{     
+        background: $colorhtml;
+        width: 35px;
+        @include flexcenter();
+        border-radius: 100%;
+        height: 35px;
+        border: 2px solid beige;
+        color: #ffff;
+        animation: fll 3s ;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        font-family: Georgia, 'Times New Roman', Times, serif;  
+        @keyframes fll{from{transform:translate(-30px) ;}to{ transform: translate(35px); }}
+       
+        }
+
+
+    .css{
+        background: $colorcss;
+        width: 35px;
+        @include flexcenter();
+        border-radius: 100%;
+        height: 35px;
+        border: 2px solid beige;
+        color: #ffff;
+       animation: fly 3s;
+       animation-iteration-count: infinite;
+       animation-direction: alternate;
+       font-family: Georgia, 'Times New Roman', Times, serif;
+       @keyframes fly{from{transform:translate(30px) ;}to{ transform: translate(-40px); }}
+    }
+
+
+    .javascript{
+        background-color: rgb(229, 229, 10);
+        width: 35px;
+       @include flexcenter();
+        border-radius: 100%;
+        height: 35px;
+        border: 2px solid beige;
+        color: #ffff;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+}
+
+button{
+    
+    margin-top: 50px;
+    background-color: transparent;
+    border: 0;
+
+
+
+.fa-arrow-right{
+    font-size: 50px;
+    color: rgb(194, 194, 183);
+    &:hover{
+        transform: scale(1.5) ;
+        transition: 2s;
+        cursor: pointer;
+    }
+
+    
+}
+
+}
+
+
+
+
 

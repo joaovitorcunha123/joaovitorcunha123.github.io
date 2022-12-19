@@ -11,7 +11,7 @@
   height: 60px;
   width: 100%;
   position: fixed;
-  z-index: auto;
+  z-index: 1;
   background: linear-gradient(#121212, #212b46);
 }
 .menu ul {
@@ -21,11 +21,12 @@
   width: 90%;
   position: fixed;
   height: 60px;
+  z-index: 1;
+  overflow: hidden;
 }
 .menu ul .fa-square-arrow-left {
   width: 100px;
   background-color: #fff;
-  z-index: 1;
 }
 .menu ul a {
   float: right;
@@ -34,6 +35,7 @@
   margin-left: 10%;
   font-size: 20px;
   color: #fff;
+  z-index: 1;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-decoration: none;
 }
@@ -163,4 +165,132 @@ body {
   color: #fff;
   display: block;
   height: 200px;
+}
+
+.conteiner {
+  width: 100%;
+  height: 80vh;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+.title {
+  font-size: 65px;
+  color: #fff;
+  text-align: center;
+  filter: drop-shadow(2px 2px 50px #fff);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  position: relative;
+}
+@media (max-width: 500px) {
+  .title {
+    font-size: 35px;
+  }
+}
+
+.editores {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  margin-top: 30px;
+  position: relative;
+}
+.editores .html {
+  background: rgb(254, 43, 43);
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  height: 35px;
+  border: 2px solid beige;
+  color: white;
+  -webkit-animation: fll 3s;
+          animation: fll 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+@-webkit-keyframes fll {
+  from {
+    transform: translate(-30px);
+  }
+  to {
+    transform: translate(35px);
+  }
+}
+@keyframes fll {
+  from {
+    transform: translate(-30px);
+  }
+  to {
+    transform: translate(35px);
+  }
+}
+.editores .css {
+  background: rgb(0, 0, 255);
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  height: 35px;
+  border: 2px solid beige;
+  color: white;
+  -webkit-animation: fly 3s;
+          animation: fly 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+@-webkit-keyframes fly {
+  from {
+    transform: translate(30px);
+  }
+  to {
+    transform: translate(-40px);
+  }
+}
+@keyframes fly {
+  from {
+    transform: translate(30px);
+  }
+  to {
+    transform: translate(-40px);
+  }
+}
+.editores .javascript {
+  background-color: rgb(229, 229, 10);
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  height: 35px;
+  border: 2px solid beige;
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+button {
+  margin-top: 50px;
+  background-color: transparent;
+  border: 0;
+}
+button .fa-arrow-right {
+  font-size: 50px;
+  color: rgb(194, 194, 183);
+}
+button .fa-arrow-right:hover {
+  transform: scale(1.5);
+  transition: 2s;
+  cursor: pointer;
 }/*# sourceMappingURL=home1.css.map */

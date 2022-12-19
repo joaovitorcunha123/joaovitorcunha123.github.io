@@ -54,8 +54,8 @@ body {
   height: 100%;
 }
 .geral .usados h3 {
-  font-size: 25px;
-  font-family: "Black Ops One", cursive;
+  font-size: 35px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: beige;
   padding: 30px;
 }
@@ -91,8 +91,8 @@ body {
   font-family: "Black Ops One", cursive;
 }
 .geral .habilidasdes h3 {
-  font-size: 25px;
-  font-family: "Black Ops One", cursive;
+  font-size: 35px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: beige;
   padding: 30px;
 }
