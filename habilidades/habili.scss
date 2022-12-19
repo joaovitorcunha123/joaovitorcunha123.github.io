@@ -1,0 +1,167 @@
+@mixin flexcenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+@mixin widthheight {
+    width: 100%;
+    height: 100vh;  
+
+}
+@mixin imagemposi {
+    background-image: url(/projetinhos/form.jpeg);
+                background-position:center ;
+                background-repeat: no-repeat;
+                background-size: cover;
+}
+
+$colorgeral: linear-gradient(#121212, #212b46);
+$colorhtml : rgb(254, 43, 43);
+$colorcss:rgb(0, 0, 255);
+$colorscript :rgb(229, 229, 10);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+  .menu{
+   @include flexcenter();
+   height: 60px;
+   width: 100%;
+   z-index:auto;
+   background:$colorgeral;
+  
+  
+  
+   
+
+   ul{
+       display: flex;
+       align-items: center;
+       justify-content: right;
+       width: 90%;
+       height: 60px;
+       
+       
+      
+
+      
+       a{
+           float: right;
+           cursor: pointer;
+           list-style-type: none;
+           margin-left: 10%;
+           font-size: 20px;
+           color: #fff;
+           font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+           text-decoration: none;
+           &:hover{
+               background-color:#212b46;
+               border-radius: 10px;
+               padding: 5px;
+           }
+           @media(max-width:474px){font-size: 13px;};
+          
+       }
+   }
+  } 
+ 
+  body{
+   width: 100%;
+   background: $colorgeral;
+  }
+  .geral{
+    height: 100%;
+    margin-bottom: 30px;
+    
+
+    .usados{
+        height: 100%;
+        
+
+      h3{
+        font-size:25px ;
+        font-family: 'Black Ops One', cursive;
+        color: beige;
+        padding: 30px;
+      }
+      .div-ferramentas-usadas{
+      
+
+
+        .fa-html5{
+            color: red;
+        }
+        .fa-sass{
+            color: rgb(241, 80, 107);
+        }
+        .fa-js{
+            color: yellow;
+        }
+        .fa-git-alt{
+            color: rgb(247, 108, 58);
+        }
+        .fa-github{
+            color: black;
+        }
+        .fa-brands{
+            font-size: 50px;
+            padding-left: 50px;
+        }
+        .use{
+            display: flex;
+            margin-top: 30px;
+            
+            p{
+                align-items: center;
+                display: flex;
+                padding-left: 30px;
+                font-size: 20px;
+                color: beige;
+                font-family: 'Black Ops One', cursive;
+            }
+        }
+
+      }
+    }
+    .habilidasdes{
+      
+        h3{
+            font-size:25px ;
+            font-family: 'Black Ops One', cursive;
+            color: beige;
+            padding: 30px;
+          }
+          .mais-sobre{
+           
+
+          .fa-brands{
+            font-size: 50px;
+            padding-left: 50px;
+        }
+        .fa-bootstrap{
+            color: rgb(132, 21, 132);
+        }
+        .fa-react{
+            color: rgb(71, 140, 215);
+        }
+        .geral-div{
+            display: flex;
+            margin-top: 30px;
+            
+            p{
+                align-items: center;
+                display: flex;
+                padding-left: 30px;
+                font-size: 20px;
+                color: beige;
+                font-family: 'Black Ops One', cursive;
+            }
+        }
+
+         }
+
+    }
+  }

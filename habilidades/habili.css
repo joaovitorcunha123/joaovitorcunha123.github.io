@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 100%;
+  z-index: auto;
+  background: linear-gradient(#121212, #212b46);
+}
+.menu ul {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  width: 90%;
+  height: 60px;
+}
+.menu ul a {
+  float: right;
+  cursor: pointer;
+  list-style-type: none;
+  margin-left: 10%;
+  font-size: 20px;
+  color: #fff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-decoration: none;
+}
+.menu ul a:hover {
+  background-color: #212b46;
+  border-radius: 10px;
+  padding: 5px;
+}
+@media (max-width: 474px) {
+  .menu ul a {
+    font-size: 13px;
+  }
+}
+
+body {
+  width: 100%;
+  background: linear-gradient(#121212, #212b46);
+}
+
+.geral {
+  height: 100%;
+  margin-bottom: 30px;
+}
+.geral .usados {
+  height: 100%;
+}
+.geral .usados h3 {
+  font-size: 25px;
+  font-family: "Black Ops One", cursive;
+  color: beige;
+  padding: 30px;
+}
+.geral .usados .div-ferramentas-usadas .fa-html5 {
+  color: red;
+}
+.geral .usados .div-ferramentas-usadas .fa-sass {
+  color: rgb(241, 80, 107);
+}
+.geral .usados .div-ferramentas-usadas .fa-js {
+  color: yellow;
+}
+.geral .usados .div-ferramentas-usadas .fa-git-alt {
+  color: rgb(247, 108, 58);
+}
+.geral .usados .div-ferramentas-usadas .fa-github {
+  color: black;
+}
+.geral .usados .div-ferramentas-usadas .fa-brands {
+  font-size: 50px;
+  padding-left: 50px;
+}
+.geral .usados .div-ferramentas-usadas .use {
+  display: flex;
+  margin-top: 30px;
+}
+.geral .usados .div-ferramentas-usadas .use p {
+  align-items: center;
+  display: flex;
+  padding-left: 30px;
+  font-size: 20px;
+  color: beige;
+  font-family: "Black Ops One", cursive;
+}
+.geral .habilidasdes h3 {
+  font-size: 25px;
+  font-family: "Black Ops One", cursive;
+  color: beige;
+  padding: 30px;
+}
+.geral .habilidasdes .mais-sobre .fa-brands {
+  font-size: 50px;
+  padding-left: 50px;
+}
+.geral .habilidasdes .mais-sobre .fa-bootstrap {
+  color: rgb(132, 21, 132);
+}
+.geral .habilidasdes .mais-sobre .fa-react {
+  color: rgb(71, 140, 215);
+}
+.geral .habilidasdes .mais-sobre .geral-div {
+  display: flex;
+  margin-top: 30px;
+}
+.geral .habilidasdes .mais-sobre .geral-div p {
+  align-items: center;
+  display: flex;
+  padding-left: 30px;
+  font-size: 20px;
+  color: beige;
+  font-family: "Black Ops One", cursive;
+}/*# sourceMappingURL=habili.css.map */

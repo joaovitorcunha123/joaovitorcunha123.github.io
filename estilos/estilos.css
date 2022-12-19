@@ -4,47 +4,6 @@
   box-sizing: border-box;
 }
 
-header {
-  background: linear-gradient(#121212, #212b46);
-}
-
-.menu {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 60px;
-  width: 100%;
-  position: fixed;
-}
-.menu ul {
-  display: flex;
-  align-items: center;
-  justify-content: right;
-  width: 90%;
-  position: fixed;
-  height: 60px;
-}
-.menu ul a {
-  float: right;
-  cursor: pointer;
-  list-style-type: none;
-  margin-left: 10%;
-  font-size: 20px;
-  color: #fff;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  text-decoration: none;
-}
-.menu ul a:hover {
-  background-color: #212b46;
-  border-radius: 10px;
-  padding: 5px;
-}
-@media (max-width: 474px) {
-  .menu ul a {
-    font-size: 13px;
-  }
-}
-
 .mainGrup {
   height: 100%;
   height: 100vh;

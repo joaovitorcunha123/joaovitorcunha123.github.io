@@ -27,50 +27,6 @@ $colorscript :rgb(229, 229, 10);
     box-sizing: border-box;
     
 }
-header{
-     background: $colorgeral;
-    
-    }
-   .menu{
-    @include flexcenter();
-    height: 60px;
-    width: 100%;
-    position: fixed;
-   
-   
-    
-
-    ul{
-        display: flex;
-        align-items: center;
-        justify-content: right;
-        width: 90%;
-        position: fixed;
-        height: 60px;
-        
-       
-
-       
-        a{
-            float: right;
-            cursor: pointer;
-            list-style-type: none;
-            margin-left: 10%;
-            font-size: 20px;
-            color: #fff;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            text-decoration: none;
-            &:hover{
-                background-color:#212b46;
-                border-radius: 10px;
-                padding: 5px;
-            }
-            @media(max-width:474px){font-size: 13px;};
-           
-        }
-    }
-   } 
-
 
 
 .mainGrup{

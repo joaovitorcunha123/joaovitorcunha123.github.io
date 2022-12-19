@@ -1,3 +1,4 @@
+
 @mixin flexcenter {
     display: flex;
     align-items: center;
@@ -6,13 +7,6 @@
 @mixin widthheight {
     width: 100%;
     height: 100vh;  
-
-}
-@mixin imagemposi {
-    background-image: url(/projetinhos/form.jpeg);
-                background-position:center ;
-                background-repeat: no-repeat;
-                background-size: cover;
 }
 
 $colorgeral: linear-gradient(#121212, #212b46);
@@ -30,9 +24,10 @@ $colorscript :rgb(229, 229, 10);
    @include flexcenter();
    height: 60px;
    width: 100%;
+   position: fixed;
    z-index:auto;
    background:$colorgeral;
-  
+   
   
   
    
@@ -42,7 +37,13 @@ $colorscript :rgb(229, 229, 10);
        align-items: center;
        justify-content: right;
        width: 90%;
+       position: fixed;
        height: 60px;
+       .fa-square-arrow-left{
+        width: 100px;
+        background-color: #fff;
+        z-index: 1;
+      }
        
        
       
@@ -67,62 +68,60 @@ $colorscript :rgb(229, 229, 10);
        }
    }
   } 
-  body{
-    background:$colorgeral ;
-    height: 100%;
-    width: 100%;
-    display: block;
-    
-    
+  html{
+    background: $colorgeral;
+    height: 1000px;
   }
-  .geral{
-  height: 100%;
-  justify-items: start;
-  flex-direction: column;
-  display: flex;
-  justify-content: center;
-  
-   
-  .geral-div{
-    margin-top: 50px;
-    display: flex;
-    align-items: center;
 
-    i{
-        font-size: 30px;
-        padding: 20px;
-        &.fa-html5{
-            color:rgb(235, 93, 93);
-        }
-        &.fa-css3-alt{
-            color: rgb(88, 88, 222);
-        }
-        &.fa-js{
-            color: rgb(243, 243, 61);
-        }
-        &.fa-sass{
-            color: rgb(186, 81, 99);
-        }
-        &.fa-bootstrap{
-            color: rgb(148, 12, 148);
-        }
-        &.fa-react{
-            color: rgb(0, 157, 255);
-        }
-        &.fa-git-alt{
-            color: rgb(234, 91, 43);
-        }
-       
+body{
+    width: 100%;
+    height: 100%;
+   
+    
+   @media(max-width:1520px){overflow: hidden;};
+   @media(max-width:820px){overflow:visible;}
+}
+
+
+
+    .conteiner{
+        @include flexcenter();
+        
+    
+
+      .img{
+         width: 80%;
+         height: 80%;
+         margin-top: 90px;
+   
+         
+         
+      img{
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+      }
+
+      p{
+        font-size: 20px;
+        letter-spacing: 2px;
+        line-height: 24px;
+        padding: 3px;
+        color: beige;
+        @media(max-width : 600px){font-size: 14px;};
+        @media(max-width: 395px){padding: 0px; letter-spacing: 2px; line-height: 19px;};
+      }
     }
-    h4{
-        color: antiquewhite;
-        padding: 5px;
     }
-  }
-  }
-  ::-webkit-scrollbar{
-    width: 10px;
-  }
-  ::-webkit-scrollbar-thumb{
-    background-color: #212b46;
-  }
+    .blue{
+      color: rgb(17, 104, 254);
+    }
+    ::-webkit-scrollbar{
+      width: 10px;
+    }
+    ::-webkit-scrollbar-thumb{
+      background-color: #212b46;
+    }
+    
+
+

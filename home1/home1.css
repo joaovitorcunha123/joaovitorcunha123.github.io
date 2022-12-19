@@ -1,0 +1,166 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  z-index: auto;
+  background: linear-gradient(#121212, #212b46);
+}
+.menu ul {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  width: 90%;
+  position: fixed;
+  height: 60px;
+}
+.menu ul .fa-square-arrow-left {
+  width: 100px;
+  background-color: #fff;
+  z-index: 1;
+}
+.menu ul a {
+  float: right;
+  cursor: pointer;
+  list-style-type: none;
+  margin-left: 10%;
+  font-size: 20px;
+  color: #fff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-decoration: none;
+}
+.menu ul a:hover {
+  background-color: #212b46;
+  border-radius: 10px;
+  padding: 5px;
+}
+@media (max-width: 474px) {
+  .menu ul a {
+    font-size: 13px;
+  }
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.yan {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#121212, #212b46);
+}
+.yan .geral {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.yan .geral .cabecalho {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.yan .geral .cabecalho .intro {
+  margin-top: 10px;
+}
+.yan .geral .cabecalho .intro .h31 {
+  font-size: 30px;
+  color: beige;
+  padding: 10px;
+}
+.yan .geral .cabecalho .intro .paragrafo {
+  font-family: sans-serif;
+  color: beige;
+  letter-spacing: 1px;
+  margin-top: 40px;
+  padding: 10px;
+}
+.yan .geral .meio {
+  width: 100%;
+  height: 100%;
+}
+.yan .geral .meio .para {
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  color: #fff;
+}
+.yan .geral .meio .para p {
+  font-size: 20px;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  padding: 5px;
+}
+@media (max-width: 500px) {
+  .yan .geral .meio .para p {
+    font-size: 15px;
+  }
+}
+.yan .geral .meio .imagens {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+.yan .geral .meio .imagens .max {
+  width: 300px;
+  height: 450px;
+}
+.yan .geral .meio .imagens .max p {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  bottom: 70px;
+  font-family: "Black Ops One", cursive;
+  color: beige;
+}
+.yan .geral .meio .imagens .div-img {
+  border: 1px solid black;
+  width: 300px;
+  height: 300px;
+  margin-bottom: 100px;
+}
+.yan .geral .meio .imagens .div-img#img1 {
+  background-image: url("tolahome.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.yan .geral .meio .imagens .div-img#img2 {
+  background-image: url("sobremin.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.yan .geral .meio .imagens .div-img#img3 {
+  background-image: url("teladesafios.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.yan .geral .meio .imagens .div-img#img4 {
+  background-image: url("telahabi.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.yan .geral .meio .imagens .div-img p {
+  color: #fff;
+  display: block;
+  height: 200px;
+}/*# sourceMappingURL=home1.css.map */
