@@ -293,4 +293,12 @@ button .fa-arrow-right:hover {
   transform: scale(1.5);
   transition: 2s;
   cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #212b46;
 }/*# sourceMappingURL=home1.css.map */
