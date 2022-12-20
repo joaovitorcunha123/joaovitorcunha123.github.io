@@ -47,9 +47,8 @@ $colorscript :rgb(229, 229, 10);
        
       
 
-      
-       a{
-           float: right;
+        a{
+            float: right;
            cursor: pointer;
            list-style-type: none;
            margin-left: 10%;
@@ -63,8 +62,24 @@ $colorscript :rgb(229, 229, 10);
                padding: 5px;
            }
            @media(max-width:474px){font-size: 13px;};
+       &.bar{
+           float: right;
+           cursor: pointer;
+           list-style-type: none;
+           margin-left: 10%;
+           font-size: 20px;
+           color: #fff;
+           font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+           text-decoration: none;
+          
+               background-color:#212b46;
+               border-radius: 10px;
+               padding: 5px;
+           
+           @media(max-width:474px){font-size: 13px;};
           
        }
+    }
    }
   } 
  
@@ -167,3 +182,11 @@ $colorscript :rgb(229, 229, 10);
 
     }
   }
+
+  ::-webkit-scrollbar{
+    width: 10px;
+  }
+  ::-webkit-scrollbar-thumb{
+    background-color: #212b46;
+  }
+  
